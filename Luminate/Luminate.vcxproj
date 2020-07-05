@@ -139,10 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="luminate\Colors.h" />
+    <ClCompile Include="luminate\Color.cpp" />
+    <ClCompile Include="luminate\Test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="luminate\Test.cpp" />
+    <ClInclude Include="luminate\Color.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

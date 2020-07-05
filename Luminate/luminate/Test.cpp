@@ -3,30 +3,20 @@
  * source: https://github.com/Cusatelli/Luminate
  * license: MIT License
  */
-#include "Colors.h"
+#include "Color.h"
+
 #include <iostream>
+
+#define RED Luminate::Color::Name::RED
+#define YELLOW Luminate::Color::Name::YELLOW
 
 int main()
 {
-	// ----------- NORMAL -----------
-	std::cout << BLACK			<< "################" << RESET << std::endl;
-	std::cout << RED			<< "################" << RESET << std::endl;
-	std::cout << GREEN			<< "################" << RESET << std::endl;
-	std::cout << YELLOW			<< "################" << RESET << std::endl;
-	std::cout << BLUE			<< "################" << RESET << std::endl;
-	std::cout << MAGENTA		<< "################" << RESET << std::endl;
-	std::cout << CYAN			<< "################" << RESET << std::endl;
-	std::cout << WHITE			<< "################" << RESET << std::endl;
-
-	// ------------ BOLD ------------
-	std::cout << BOLDBLACK		<< "################" << RESET << std::endl;
-	std::cout << BOLDRED		<< "################" << RESET << std::endl;
-	std::cout << BOLDGREEN		<< "################" << RESET << std::endl;
-	std::cout << BOLDYELLOW		<< "################" << RESET << std::endl;
-	std::cout << BOLDBLUE		<< "################" << RESET << std::endl;
-	std::cout << BOLDMAGENTA	<< "################" << RESET << std::endl;
-	std::cout << BOLDCYAN		<< "################" << RESET << std::endl;
-	std::cout << BOLDWHITE		<< "################" << RESET << std::endl;
-
+	// ------------ TEST ------------
+	Luminate::Color* color = new Luminate::Color;
+	// ------------------------------
+	std::cout << color->get(YELLOW) << "This is a test! [1]" << color->reset() << std::endl;
+	std::cout << color->get(RED) << "This is a test! [2]" << color->reset();
+	// ------------------------------
 	return 0;
 }

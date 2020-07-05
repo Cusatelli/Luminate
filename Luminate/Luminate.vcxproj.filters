@@ -18,9 +18,15 @@
     <ClInclude Include="luminate\Colors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="luminate\Color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="luminate\Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="luminate\Color.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
